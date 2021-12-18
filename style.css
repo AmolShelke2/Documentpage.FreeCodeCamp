@@ -1,76 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 html,
 body {
   min-width: 290px;
   color: #4d4e53;
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 0 auto;
 }
 
 #navbar {
-  position: fixed;
-  min-width: 290px;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  border: 1px solid rgba(0, 22, 22, 0.4);
-}
-
-header {
-  color: black;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: thin;
-}
-
-#main-doc header {
+  background: rgb(180, 172, 163);
   text-align: left;
-  margin: 0px;
+  font-weight: thin;
+  text-align: center;
+  color: whitesmoke;
 }
 
-#navbar ul {
-  height: 800;
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+nav header {
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
-#navbar li {
-  color: #4d4e53;
-  border-top: 1px solid;
+nav ul {
   list-style: none;
-  position: relative;
-  width: 100%;
 }
 
 #navbar a {
-  display: block;
   padding: 10px 30px;
-  color: #4d4e53;
+  color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
 }
 
-#main-doc {
-  position: absolute;
-  margin-left: 310px;
-  padding: 30px;
-  margin-bottom: 110px;
+#navbar a:hover {
+  color: rgb(155, 155, 155);
 }
 
-section article {
-  color: #4d4e53;
-  margin: 15px;
-  font-size: 0.96em;
+main header {
+  color: rgb(180, 172, 163);
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+.main-section {
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 section li {
-  margin: 15px 0px 0px 20px;
+  margin: 5px 0px 0px 20px;
 }
 
 code {
@@ -87,7 +69,7 @@ code {
   border-radius: 5px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 750px) {
   #navbar {
     position: fixed;
     min-width: 290px;
@@ -96,7 +78,7 @@ code {
     width: 300px;
     height: 100%;
     border-right: 2px solid rgb(148, 144, 144);
-    background-color: rgb(98, 106, 109);
+    background-color: rgb(214, 168, 142);
   }
 
   nav header {
@@ -134,6 +116,13 @@ code {
   #navbar a:hover {
     transition-duration: 0.7s;
     background-color: rgb(196, 196, 196);
+  }
+
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
   }
 
   .main-section {
