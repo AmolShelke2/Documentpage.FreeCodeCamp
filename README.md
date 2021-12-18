@@ -3,7 +3,7 @@
 This is Another a FreecodeCamps responsive web designs project and I am very glad that I completed this challenge hope that You love it !
 
 ## Screenshot
-![192 168 153 73_5500_index html (2)](https://user-images.githubusercontent.com/95171638/146535836-41032551-9c82-4a1e-a966-7c1346b0973e.png)
+![192 168 153 73_5500_index html (3)](https://user-images.githubusercontent.com/95171638/146638220-fa385a3d-8268-463a-8ab3-1c1155fe2b84.png)
 
 # Technologies
 
