@@ -6,6 +6,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 nav {
