@@ -1,59 +1,85 @@
-html,
-body {
-  min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
-nav {
-  margin: 0 auto;
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 25px;
+  background-color: #f5f5f5;
 }
 
 #navbar {
-  background: rgb(180, 172, 163);
-  text-align: left;
-  font-weight: thin;
+  background-color: pink;
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  border-right: solid;
+  border-color: #000;
+  margin-right: 3px;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  color: whitesmoke;
+  font-size: 1.8em;
+  background-color: #393b44;
 }
 
-nav header {
-  font-weight: 700;
-  font-size: 1.3em;
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0;
 }
 
-nav ul {
+#navbar li {
+  border-top: 1px solid;
   list-style: none;
+  position: relative;
+  width: 100%;
 }
 
-#navbar a {
-  padding: 10px 30px;
-  color: whitesmoke;
+.nav-link {
+  display: block;
+  padding: 2px 30px;
+  color: #111;
   text-decoration: none;
   cursor: pointer;
+  border: 1px solid rgb(190, 190, 190);
 }
 
-#navbar a:hover {
-  color: rgb(155, 155, 155);
+.nav-link:hover {
+  color: #000;
 }
 
-main header {
-  color: rgb(180, 172, 163);
-  font-size: 1.8em;
-  font-weight: thin;
+#main-doc {
+  margin-left: 350px;
+  margin-right: 30px;
+  color: #393b44;
 }
 
-.main-section {
-  margin-top: 10px;
-  margin-left: 5px;
+#main-doc header {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 0;
 }
 
-section li {
-  margin: 5px 0px 0px 20px;
+p {
+  margin-top: 20px;
 }
 
 code {
@@ -64,74 +90,50 @@ code {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: #f7f7f7;
+  background-color: #aaaaaa;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
 }
 
-@media (min-width: 750px) {
-  #navbar {
-    position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    border-right: 2px solid rgb(148, 144, 144);
-    background-color: rgb(214, 168, 142);
+li {
+  line-height: 2.5;
+}
+
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 25px;
   }
 
-  nav header {
-    color: whitesmoke;
-  }
-
-  #main-doc header {
-    text-align: left;
-    margin: 0px;
-  }
-
-  #navbar ul {
-    height: 88%;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  #navbar li {
-    color: whitesmoke;
-    border-top: 1px solid;
-    list-style: none;
-    position: relative;
-    width: 100%;
-  }
-
-  #navbar a {
-    display: block;
-    padding: 10px 30px;
-    color: whitesmoke;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  #navbar a:hover {
-    transition-duration: 0.7s;
-    background-color: rgb(196, 196, 196);
-  }
-
-  #main-doc {
-    position: absolute;
-    margin-left: 310px;
+  header {
     padding: 20px;
-    margin-bottom: 110px;
+    text-align: center;
+    font-size: 1.8em;
+    background-color: #393b44;
   }
 
-  .main-section {
-    margin-bottom: 60px;
+  #navbar {
+    border-right: none;
+    border-bottom: 2px solid #1e2022;
+    height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
   }
-
-  #navbar a:hover {
-    transition-duration: 0.7s;
-    background-color: rgb(196, 196, 196);
+  .nav-link {
+    display: block;
+    padding: 0px 30px;
+  }
+  #main-doc {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0;
+    color: #4d4e53;
+    width: 100%;
+    min-width: 0px;
   }
 }
