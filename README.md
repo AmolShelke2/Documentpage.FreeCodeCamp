@@ -3,8 +3,7 @@
 This is Another a FreecodeCamps responsive web designs project and I am very glad that I completed this challenge hope that You love it !
 
 ## Screenshot
-![Technical Documentation page - Google Chrome 18-12-2021 8 45 54 PM](https://user-images.githubusercontent.com/95171638/146646159-3666bd0e-3d24-43f1-b0d1-fe76693c397f.png)
-
+![Technical Documentation Page - Google Chrome 17-05-2022 7 49 32 PM](https://user-images.githubusercontent.com/95171638/168834593-026ed5dc-0478-426d-828c-5d7d35316fd1.png)
 
 
 # Technologies
